@@ -19,9 +19,10 @@ jobs:
       - name: Print input data
         id: uppercase
         run: echo "result=$(echo '${{ github.event.inputs.name }}' | tr 'a-z' 'A-Z')" >> $GITHUB_OUTPUT
+
   output-data:
     needs: input-data
     runs-on: ubuntu-latest
     steps:
       - name: Print output data
-        run: echo "Hello, ${{needs.input-data.upper_name}}"
+        run: echo "Hello, ${{ needs.input-data.outputs.upper_name }}"
