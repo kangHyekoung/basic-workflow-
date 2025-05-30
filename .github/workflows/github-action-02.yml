@@ -1,6 +1,6 @@
 ### github-action-02.yml
-name: Test GitHub Actions-01
-run-name: Run GitHub Actions-01
+name: Test GitHub Actions-02
+run-name: Run GitHub Actions-02
 on:
   ### push
   workflow_dispatch
