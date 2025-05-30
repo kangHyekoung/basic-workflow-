@@ -1,13 +1,13 @@
-### .github/workflows/github-actions-01.yml
-
+### github-action-01.yml
 name: Test GitHub Actions-01
 run-name: Run GitHub Actions-01
-on: [push]
+on:
+  push
 
 jobs:
   Test-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: echo-01
+      - name: step-01
         run: |
-          echo "test echo-01"
+          echo "Test Github Actions echos-01"
