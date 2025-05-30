@@ -9,8 +9,9 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
+      - name: Print ls
+        run: ls -al
+
       - name: Github Actions Checkout
+        uses: actions/checkout@v4
       - run: ls -al
-      - uses: actions/checkout@v4
-      - run: ls -al
-    
