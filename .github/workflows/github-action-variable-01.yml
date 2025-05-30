@@ -14,6 +14,6 @@ jobs:
       MESSAGE: Hello ### 지역변수
     steps:
       - name: "It's Day!"
-        run: echo "Today is $DAY_OF_WEEK!"
+        run: echo "$MESSAGE, Today is $DAY_OF_WEEK!"
     
   
