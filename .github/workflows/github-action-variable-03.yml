@@ -10,4 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Hello, Var_Test"
-        run: echo "Hello, ${{ vars.VAR_TEST }}"
+        run: echo "Hello, ${{ vars.VAR_TEST }}" 
+  check-secrets-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Hello, Secret_Test"
+        run: echo "Hello, ${{ secrets.VAR_TEST }}"
