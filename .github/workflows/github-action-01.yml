@@ -2,8 +2,8 @@
 name: Test GitHub Actions-01
 run-name: Run GitHub Actions-01
 on:
-  push
-
+  ### push
+  workflow_dispatch
 jobs:
   Test-GitHub-Actions:
     runs-on: ubuntu-latest
